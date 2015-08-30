@@ -1,0 +1,45 @@
+/* CSS declarations go here */
+.board {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.board h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.selected {
+  background-color: #DADADA;
+}
+
+.playerForm {
+  margin-top: 2em;
+}
+
+.navbar-default {
+  background-color: #333333;
+  border-color: #333333;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Bangers', cursive;
+  color: #FFD901;
+  font-size: 2em;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #FFD901;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFD901;
+}
+
+.selection-notice {
+  margin: 1.5em 0;
+}

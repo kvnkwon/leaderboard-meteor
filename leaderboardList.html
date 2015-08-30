@@ -1,0 +1,24 @@
+<template name="leaderboard">
+  <div class="container board">
+
+    <div class="col-sm-8 col-sm-offset-2">
+      {{#each player}}
+        <h4 class="player {{selectedClass}}"><i class="fa fa-user"></i> {{name}}: {{score}}</h4>
+      {{/each}}
+
+
+      {{#if currentUser}}
+        {{#if showSelectedPlayer}}
+          <h5 class="selection-notice">You have selected {{showSelectedPlayer.name}}</h5>
+          <button class="btn btn-primary increment"><i class="fa fa-plus-circle"> <i class="fa fa-trophy"></i></i></button>
+          <button class="btn btn-warning decrement"><i class="fa fa-minus-circle"> <i class="fa fa-trophy"></i></i></button>
+          <button class="btn btn-danger remove"><i class="fa fa-bomb"></i> Remove Player</button>
+        {{/if}}
+        {{> addPlayerForm}}
+      {{else}}
+        Sign up or login to create a leaderboard!
+      {{/if}}
+    </div>
+
+  </div>
+</template>
